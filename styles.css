@@ -4,6 +4,7 @@
   list-style: none;
   font-family: "Blinker", sans-serif;
   text-decoration: none;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -16,16 +17,16 @@ button {
 }
 /*--Nav--*/
 nav {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 250, 250);
   width: 100%;
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.23);
+  padding: 19px;
 }
 .nav-container {
   margin: 0 auto;
   max-width: 1200px;
   align-items: center;
   display: flex;
-
   justify-content: space-between;
   transition: height 0.1s linear;
 }
@@ -51,7 +52,81 @@ nav {
   display: none;
   gap: 3em;
 }
-@media (max-width: 600px) {
+
+header {
+  position: relative;
+  max-width: 1200px;
+  max-height: 90px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "br c k"
+    "br c e";
+  gap: 3px;
+  margin: 0 auto;
+}
+.header-bedroom {
+  grid-area: br;
+}
+.header-bedroom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-bedroom p {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  font-size: 2.4rem;
+  color: rgb(250, 250, 250);
+}
+.header-cosmetics {
+  grid-area: c;
+}
+.header-cosmetics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-cosmetics p {
+  position: absolute;
+  bottom: 1rem;
+  left: 40rem;
+  font-size: 2.4rem;
+  color: rgb(250, 250, 250);
+}
+.header-kitchen {
+  grid-area: k;
+}
+.header-kitchen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-kitchen p {
+  position: absolute;
+  bottom: 1rem;
+  left: 60rem;
+  font-size: 2.4rem;
+  color: rgb(250, 250, 250);
+}
+.header-electronics {
+  grid-area: e;
+}
+.header-electronics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-electronics p {
+  position: absolute;
+  bottom: -19rem;
+  left: 60rem;
+  font-size: 2.4rem;
+  color: rgb(250, 250, 250);
+}
+@media (max-width: 582px) {
   .nav-container-hamburger {
     display: flex;
   }
