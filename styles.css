@@ -152,6 +152,10 @@ header {
   margin: 11rem auto;
   max-width: 1200px;
 }
+.bestsellers h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
 .bestsellers-products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -160,7 +164,6 @@ header {
 }
 .bestsellers-products-sheet {
   border: 2px solid grey;
-  text-align: center;
 }
 .bestsellers-products-sheet-image img {
   width: 100%;
