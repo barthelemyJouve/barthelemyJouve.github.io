@@ -20,7 +20,7 @@ nav {
   background-color: rgb(250, 250, 250);
   width: 100%;
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.23);
-  padding: 19px;
+  padding: 0 19px;
 }
 .nav-container {
   margin: 0 auto;
@@ -68,6 +68,7 @@ header {
 }
 .header-bedroom {
   grid-area: br;
+  position: relative;
 }
 .header-bedroom img {
   width: 100%;
@@ -76,13 +77,23 @@ header {
 }
 .header-bedroom p {
   position: absolute;
-  bottom: 1rem;
-  left: 2rem;
-  font-size: 2.4rem;
+  bottom: 0.5em;
+  left: 0.5rem;
+  font-size: 2rem;
   color: rgb(250, 250, 250);
 }
+.header-grid-overlay {
+  position: absolute;
+  background: rgba(31, 4, 211, 0.099);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .header-cosmetics {
   grid-area: c;
+  position: relative;
 }
 .header-cosmetics img {
   width: 100%;
@@ -91,13 +102,14 @@ header {
 }
 .header-cosmetics p {
   position: absolute;
-  bottom: 1rem;
-  left: 40rem;
-  font-size: 2.4rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  font-size: 2rem;
   color: rgb(250, 250, 250);
 }
 .header-kitchen {
   grid-area: k;
+  position: relative;
 }
 .header-kitchen img {
   width: 100%;
@@ -106,13 +118,14 @@ header {
 }
 .header-kitchen p {
   position: absolute;
-  bottom: 1rem;
-  left: 60rem;
-  font-size: 2.4rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  font-size: 2rem;
   color: rgb(250, 250, 250);
 }
 .header-electronics {
   grid-area: e;
+  position: relative;
 }
 .header-electronics img {
   width: 100%;
@@ -121,12 +134,12 @@ header {
 }
 .header-electronics p {
   position: absolute;
-  bottom: -19rem;
-  left: 60rem;
-  font-size: 2.4rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  font-size: 2rem;
   color: rgb(250, 250, 250);
 }
-@media (max-width: 582px) {
+@media (max-width: 625px) {
   .nav-container-hamburger {
     display: flex;
   }
