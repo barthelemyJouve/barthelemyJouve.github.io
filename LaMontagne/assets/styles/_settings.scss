@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "interbold";
+  src: url(../fonts/Inter/static/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+$font1: interbold, sans-serif;
+$font2: merri, sans-serif;
+$white1: rgb(253, 254, 252);
+$black1: rgb(8, 7, 3);
+$grey1: rgb(209, 209, 209);
+$grey2: rgb(243, 243, 233);
+$grey3: rgb(105, 105, 105);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin title {
+  color: $white1;
+  font-family: $font1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+body {
+  background: url(../images/bg.jpg) fixed center/cover;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media screen and (max-width: 1300px) {
+    width: 90%;
+  }
+}
+.btn-full-story {
+  color: $black1;
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid $black1;
+  padding: 18px 30px;
+  letter-spacing: 3px;
+  font-family: $font1;
+  font-size: 0.85rem;
+
+  &:hover {
+    color: $white1;
+    background: $black1;
+    scale: 110%;
+    cursor: pointer;
+  }
+}

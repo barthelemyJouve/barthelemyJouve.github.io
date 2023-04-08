@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: rgba(4, 4, 4, 0.098);
+  color: rgb(4, 4, 4);
+  margin: 0 5%;
+}
+a {
+  text-decoration: none;
+  color: rgb(4, 4, 4);
+  cursor: pointer;
+}
+
+header {
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 34.2%;
+  font-size: 1.5rem;
+  position: fixed;
+  background: #faf8f8;
+  border-radius: 3px;
+  width: 90%;
+}
+.logo {
+  padding: 40px 40px;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  text-align: end;
+}
+
+nav ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 100%;
+  padding: 40px 40px;
+  transition: 0.3s ease-in-out;
+}
+nav ul li:hover {
+  scale: 110%;
+}
+.header-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  gap: 10%;
+}
+.header-content h1 {
+  font-size: 4rem;
+}
+.header-content h2 {
+  font-size: 2rem;
+}
+.header-tech {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header-tech ul {
+  display: flex;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+main div h3 {
+  font-size: 2rem;
+}
+.projects-links {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+.projects-links-go {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.projects-links-go:hover {
+  scale: 150%;
+}
+
+footer {
+  text-align: center;
+  height: 50vh;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  border-top: 1px solid rgb(4, 4, 4);
+}
+footer h3 {
+  margin: 40px 0;
+}
+.contact-infos {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+.footer-copyright-socialmedia {
+  border-top: 1px solid rgb(4, 4, 4);
+  text-transform: uppercase;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+
+  font-weight: bold;
+}
