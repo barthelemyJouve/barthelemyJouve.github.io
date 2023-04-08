@@ -19,6 +19,7 @@ button {
 body {
   background-color: rgb(254, 253, 252);
 }
+
 nav {
   width: 100%;
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.23);
@@ -67,6 +68,16 @@ header {
   gap: 1.3rem;
   margin: 1.3rem auto;
 }
+@media screen and (max-width: 660px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "br c"
+      "k e";
+  }
+}
+
 .header-bedroom {
   grid-area: br;
   position: relative;
@@ -83,6 +94,7 @@ header {
   font-size: 2rem;
   color: rgb(252, 253, 254);
 }
+
 .header-grid-overlay {
   position: absolute;
   height: 100%;
@@ -163,8 +175,14 @@ header {
   grid-template-rows: 1fr 1fr;
   gap: 1.3rem;
 }
+@media screen and (max-width: 650px) {
+  .bestsellers-products {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
 .bestsellers-products-sheet {
-  border: 2px solid rgba(128, 128, 128, 0.134);
+  border: 3px solid rgba(128, 128, 128, 0.134);
   transition: 0.2 ease-in-out;
 }
 .bestsellers-products-sheet:hover {
@@ -190,6 +208,11 @@ header {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 650px) {
+  .design-container {
+    display: block;
+  }
+}
 .design-right-container {
   min-height: 400px;
   display: flex;
@@ -210,7 +233,7 @@ header {
   color: rgb(254, 253, 252);
   background-color: rgb(13, 13, 13);
   border-radius: 2px;
-  border: none;
+  border: 3px solid rgb(13, 13, 13);
   padding: 10px;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -232,6 +255,12 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1.3rem;
+}
+@media screen and (max-width: 650px) {
+  .trending-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 .trending h2 {
   font-size: 2.2rem;
@@ -289,6 +318,11 @@ footer {
   justify-content: center;
   text-align: center;
   gap: 30px;
+}
+@media screen and (max-width: 650px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
 }
 .linkbox a {
   color: white;
