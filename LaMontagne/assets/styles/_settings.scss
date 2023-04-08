@@ -21,6 +21,9 @@ $grey3: rgb(105, 105, 105);
   box-sizing: border-box;
   list-style-type: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 @mixin center {
   display: flex;
   justify-content: center;

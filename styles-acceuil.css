@@ -4,6 +4,9 @@
   list-style-type: none;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Segoe UI", sans-serif;
   background: rgba(4, 4, 4, 0.098);
