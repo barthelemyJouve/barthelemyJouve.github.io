@@ -13,14 +13,31 @@
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url(../images/bg.jpg) fixed center/cover;
   max-width: 1200px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1300px) {
-  body {
-    width: 90%;
+body:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(8, 7, 3);
+  z-index: 2;
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -33,11 +50,12 @@ body {
   letter-spacing: 3px;
   font-family: interbold, sans-serif;
   font-size: 0.85rem;
+  transition: 0.3s ease;
 }
 .btn-full-story:hover {
   color: rgb(253, 254, 252);
   background: rgb(8, 7, 3);
-  scale: 110%;
+  scale: 105%;
   cursor: pointer;
 }
 
@@ -54,6 +72,13 @@ header .header-content {
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  transform: translateY(40px);
+  animation: headerAnim 1.5s forwards;
+}
+@keyframes headerAnim {
+  to {
+    transform: translateY(0);
+  }
 }
 header .header-content .h1-container {
   width: 50%;

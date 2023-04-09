@@ -9,6 +9,13 @@ header {
     @include center;
     flex-direction: column;
     gap: 50px;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+    @keyframes headerAnim {
+      to {
+        transform: translateY(0);
+      }
+    }
 
     .h1-container {
       width: 50%;
@@ -19,6 +26,7 @@ header {
       h1 {
         @include title;
         font-size: 4rem;
+
         @media screen and (max-width: 650px) {
           font-size: 3rem;
         }
