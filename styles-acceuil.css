@@ -137,6 +137,9 @@ main {
 main div h3 {
   font-size: 2rem;
 }
+.about p {
+  line-height: 50px;
+}
 .projects-links {
   font-size: 1.5rem;
   display: grid;
@@ -148,10 +151,41 @@ main div h3 {
   text-align: center;
   justify-content: center;
   align-items: center;
-  transition: 0.3s ease-in-out;
 }
-.projects-links-go:hover {
-  scale: 150%;
+
+.projects-links-go a {
+  transition: 0.3s ease-in-out;
+  color: rgb(4, 4, 4);
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid rgb(4, 4, 4);
+  padding: 18px 30px;
+  border-radius: 3px;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+  animation: linkAnim 1.5s ease infinite;
+}
+@keyframes linkAnim {
+  25% {
+    border: 2px dashed rgb(4, 4, 4);
+  }
+  50% {
+    border: 2px dotted rgb(4, 4, 4);
+  }
+  75% {
+    border: 2px dashed rgb(4, 4, 4);
+  }
+  to {
+    border: 2px dotted rgb(4, 4, 4);
+  }
+}
+.projects-links-go a:hover {
+  color: rgb(249, 249, 248);
+  background: rgba(4, 4, 4, 0.098);
+  scale: 110%;
+  cursor: pointer;
+  animation: linkAnim 1.5s infinite;
 }
 
 footer {
@@ -178,6 +212,8 @@ footer h3 {
 .social {
   display: flex;
   justify-content: space-evenly;
-
   font-weight: bold;
+}
+.social div i {
+  display: block;
 }
