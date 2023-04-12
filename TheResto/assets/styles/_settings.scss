@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "font1";
+  src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "font3";
+  src: url(../font/Roboto-Light.ttf);
+}
+
+$font1: "font1", sans-serif;
+$font2: "font2", serif;
+$font3: "font3", serif;
+
+$black1: rgb(15, 12, 14);
+$black2: rgb(4, 3, 4);
+$white1: rgb(238, 238, 238);
+$gold1: rgb(162, 112, 69);
+$grey1: rgb(33, 32, 30);
+$grey2: rgb(186, 183, 183);
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  background: $grey2;
+  font-family: $font3;
+}
+@keyframes animHeader {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.circle-image img {
+  clip-path: circle(50% at 50% 50%);
+  //   height: 60px;
+}
+.title {
+  font-family: $font1;
+  color: $gold1;
+  text-align: center;
+
+  span {
+    font-family: $font2;
+    color: $white1;
+    text-transform: uppercase;
+  }
+}
+.tickets {
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+.fork-spoon {
+  background: url(../img/ic-plate-big.png) no-repeat center;
+  height: 50px;
+}
+.fork-spoon2 {
+  background: url(../img/ic-plate.png) no-repeat center;
+  height: 60px;
+}
