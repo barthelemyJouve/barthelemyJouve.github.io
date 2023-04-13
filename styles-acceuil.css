@@ -36,6 +36,7 @@ a {
   text-decoration: none;
   color: rgb(4, 4, 4);
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 header {
@@ -217,7 +218,10 @@ footer h3 {
 .social div i {
   display: block;
 }
-
-.animnav {
-  visibility: hidden;
+.classAnimClickNav {
+  color: rgb(249, 249, 248);
+  letter-spacing: 5px;
+}
+.classBackground {
+  background: rgb(4, 4, 4);
 }
