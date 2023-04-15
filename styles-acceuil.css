@@ -34,7 +34,7 @@ body::before {
 }
 a {
   text-decoration: none;
-  color: rgb(4, 4, 4);
+  color: rgb(249, 249, 248);
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -50,6 +50,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  color: rgb(4, 4, 4);
   gap: 34.2%;
   font-size: 1.5rem;
   position: fixed;
@@ -57,6 +58,8 @@ nav {
   border-radius: 3px;
   width: 90%;
   z-index: 1;
+  top: -120px;
+  transition: 0.4s;
 }
 .logo {
   padding: 40px 40px;
@@ -221,7 +224,19 @@ footer h3 {
 .classAnimClickNav {
   color: rgb(249, 249, 248);
   letter-spacing: 5px;
+  transform: translateX(0);
 }
 .classBackground {
   background: rgb(4, 4, 4);
+}
+
+.mousemove {
+  border-radius: 50px;
+  border: 2px solid rgb(4, 4, 4);
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: linkAnim 3s infinite;
+  z-index: -1;
 }
