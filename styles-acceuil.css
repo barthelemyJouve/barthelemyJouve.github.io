@@ -12,6 +12,7 @@ body {
   background: rgba(4, 4, 4, 0.098);
   color: rgb(4, 4, 4);
   margin: 0 5%;
+  cursor: none;
 }
 body::before {
   content: "";
@@ -34,9 +35,11 @@ body::before {
 }
 a {
   text-decoration: none;
-  color: rgb(249, 249, 248);
+  color: rgb(4, 4, 4);
   cursor: pointer;
   transition: 0.3s ease;
+  cursor: pointer;
+  z-index: 10;
 }
 
 header {
@@ -55,11 +58,11 @@ nav {
   font-size: 1.5rem;
   position: fixed;
   background: #faf8f8;
-  border-radius: 3px;
+  border-radius: 30px;
   width: 90%;
-  z-index: 1;
   top: -120px;
   transition: 0.4s;
+  z-index: 10;
 }
 .logo {
   padding: 40px 40px;
@@ -76,9 +79,15 @@ nav ul li {
   height: 100%;
   padding: 40px 40px;
   transition: 0.3s ease-in-out;
+  z-index: 10;
+  cursor: pointer;
 }
 nav ul li:hover {
   scale: 110%;
+}
+nav ul li a {
+  z-index: 10;
+  cursor: pointer;
 }
 .header-content {
   display: flex;
@@ -231,12 +240,33 @@ footer h3 {
 }
 
 .mousemove {
-  border-radius: 50px;
-  border: 2px solid rgb(4, 4, 4);
-  height: 30px;
-  width: 30px;
+  height: 10px;
+  width: 10px;
+  background: rgb(4, 4, 4);
   position: absolute;
+  border-radius: 50px;
   transform: translate(-50%, -50%);
-  animation: linkAnim 3s infinite;
-  z-index: -1;
+  z-index: 9;
+}
+.mousemove2 {
+  height: 50px;
+  width: 50px;
+  background: rgba(249, 249, 248, 0.378);
+  position: absolute;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+  transition: 0.2s;
+  mix-blend-mode: difference;
+}
+.mousemove3 {
+  height: 150px;
+  width: 150px;
+  background: rgba(4, 4, 4, 0.098);
+  position: absolute;
+  border-radius: 300px;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  transition: 0.3s;
+  mix-blend-mode: difference;
 }
