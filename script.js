@@ -1,11 +1,13 @@
 // SCROLL NAV
 
+let lastScroll = 0;
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 10 && window.scrollY < 400) {
-    nav.style.top = 0;
+  if (window.scrollY < lastScroll) {
+    nav.style.top = "0";
   } else {
     nav.style.top = "-120px";
   }
+  lastScroll = window.scrollY;
 });
 
 // MouseEffect;

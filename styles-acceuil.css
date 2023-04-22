@@ -60,7 +60,6 @@ nav {
   background: #faf8f8;
   border-radius: 30px;
   width: 90%;
-  top: -120px;
   transition: 0.4s;
   z-index: 10;
 }
