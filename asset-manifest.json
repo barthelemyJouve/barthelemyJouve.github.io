@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.95ef476d.css",
-    "main.js": "/static/js/main.69be9c54.js",
+    "main.css": "/static/css/main.56c7b980.css",
+    "main.js": "/static/js/main.13d36180.js",
     "static/media/home-header.jpg": "/static/media/home-header.1ba794b61127430de296.jpg",
+    "static/media/home-header.webp": "/static/media/home-header.e589e7d2d85d8a36a035.webp",
     "static/media/about-header.jpg": "/static/media/about-header.0395393f2f53ad84720a.jpg",
+    "static/media/caps.jpg": "/static/media/caps.7dfaa8a54b5000279fd6.jpg",
+    "static/media/smart-watch.jpg": "/static/media/smart-watch.e7b434f8dc2b06ed9753.jpg",
     "static/media/Blinker-Regular.ttf": "/static/media/Blinker-Regular.b7923cd402706163edf3.ttf",
+    "static/media/bag.webp": "/static/media/bag.6118d7f5411e30310234.webp",
     "static/media/about-contact.webp": "/static/media/about-contact.13a181288fff2a55d873.webp",
+    "static/media/tongue-scrapper.jpg": "/static/media/tongue-scrapper.708642c5ef7e3642e75a.jpg",
+    "static/media/push-up-bars.jpg": "/static/media/push-up-bars.c25dfd96bb2937ff689b.jpg",
     "index.html": "/index.html",
-    "main.95ef476d.css.map": "/static/css/main.95ef476d.css.map",
-    "main.69be9c54.js.map": "/static/js/main.69be9c54.js.map"
+    "main.56c7b980.css.map": "/static/css/main.56c7b980.css.map",
+    "main.13d36180.js.map": "/static/js/main.13d36180.js.map"
   },
   "entrypoints": [
-    "static/css/main.95ef476d.css",
-    "static/js/main.69be9c54.js"
+    "static/css/main.56c7b980.css",
+    "static/js/main.13d36180.js"
   ]
 }
